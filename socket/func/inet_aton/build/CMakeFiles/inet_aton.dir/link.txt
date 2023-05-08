@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/inet_aton.dir/main.c.o -o inet_aton 

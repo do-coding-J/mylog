@@ -1,5 +1,7 @@
 BUILD_DIR := build
 EXECUTABLE := server
+IP = 127.0.0.1
+PORT = 9090
 
 all : build
 
@@ -13,4 +15,4 @@ clean :
 	rm -rf ${BUILD_DIR}
 
 run :
-	./build/${EXECUTABLE}
+	./build/${EXECUTABLE} ${PORT}
