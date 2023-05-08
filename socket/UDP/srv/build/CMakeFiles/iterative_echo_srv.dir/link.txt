@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/iterative_echo_srv.dir/main.c.o -o iterative_echo_srv 
