@@ -1,0 +1,3 @@
+/home/jj/ws/log/socket/domain/hostbyaddr/build/CMakeFiles/HostByAddr.dir
+/home/jj/ws/log/socket/domain/hostbyaddr/build/CMakeFiles/edit_cache.dir
+/home/jj/ws/log/socket/domain/hostbyaddr/build/CMakeFiles/rebuild_cache.dir

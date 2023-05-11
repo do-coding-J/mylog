@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/conf.dir/main.c.o -o conf 
