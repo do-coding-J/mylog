@@ -1,0 +1,6 @@
+Invoking command in '/root/ros/msgs/build/micro_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/ros/msgs/src/micro_ros_msgs -DCMAKE_INSTALL_PREFIX=/root/ros/msgs/install/micro_ros_msgs
+Invoked command in '/root/ros/msgs/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/ros/msgs/src/micro_ros_msgs -DCMAKE_INSTALL_PREFIX=/root/ros/msgs/install/micro_ros_msgs
+Invoking command in '/root/ros/msgs/build/micro_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/ros/msgs/build/micro_ros_msgs -- -j8 -l8
+Invoked command in '/root/ros/msgs/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/ros/msgs/build/micro_ros_msgs -- -j8 -l8
+Invoking command in '/root/ros/msgs/build/micro_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/ros/msgs/build/micro_ros_msgs
+Invoked command in '/root/ros/msgs/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/ros/msgs/build/micro_ros_msgs

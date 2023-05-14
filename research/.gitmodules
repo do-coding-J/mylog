@@ -1,0 +1,6 @@
+[submodule "downloads/googletest"]
+	path = downloads/googletest
+	url = https://github.com/google/googletest.git
+[submodule "downloads/arm-none-eabi-gcc"]
+	path = downloads/arm-none-eabi-gcc
+	url = https://github.com/ilg-archived/arm-none-eabi-gcc.git

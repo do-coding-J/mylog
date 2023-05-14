@@ -1,0 +1,319 @@
+[0.000000] (-) TimerEvent: {}
+[0.000136] (micro_ros_msgs) JobQueued: {'identifier': 'micro_ros_msgs', 'dependencies': OrderedDict()}
+[0.000158] (micro_ros_msgs) JobStarted: {'identifier': 'micro_ros_msgs'}
+[0.009030] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'cmake'}
+[0.009116] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '/root/ros/msgs/src/micro_ros_msgs', '-DCMAKE_INSTALL_PREFIX=/root/ros/msgs/install/micro_ros_msgs'], 'cwd': '/root/ros/msgs/build/micro_ros_msgs', 'env': OrderedDict([('HOSTNAME', '0a0e2ce4e51f'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros/msgs/micro_ros_msgs'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('PWD', '/root/ros/msgs/build/micro_ros_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.052900] (micro_ros_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.094643] (micro_ros_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.098610] (-) TimerEvent: {}
+[0.099666] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.158012] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.158572] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.198692] (-) TimerEvent: {}
+[0.215499] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.224386] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.224659] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.227415] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.295471] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.296761] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.298706] (-) TimerEvent: {}
+[0.352760] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.360230] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.360475] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.362248] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.373005] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.373133] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.398774] (-) TimerEvent: {}
+[0.470337] (micro_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.472947] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.476770] (micro_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.498826] (-) TimerEvent: {}
+[0.523815] (micro_ros_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.535077] (micro_ros_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.579888] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.598906] (-) TimerEvent: {}
+[0.602803] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.673347] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.698940] (-) TimerEvent: {}
+[0.731230] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[0.789439] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.797730] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.798956] (-) TimerEvent: {}
+[0.810220] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.811770] (micro_ros_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[0.828024] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.828360] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.828426] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[0.828478] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[0.838887] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[0.875651] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.882690] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.887008] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.898995] (micro_ros_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.899121] (-) TimerEvent: {}
+[0.928739] (micro_ros_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[0.930442] (micro_ros_msgs) StdoutLine: {'line': b'-- Build files have been written to: /root/ros/msgs/build/micro_ros_msgs\n'}
+[0.936754] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[0.937303] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'build'}
+[0.937353] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros/msgs/build/micro_ros_msgs', '--', '-j8', '-l8'], 'cwd': '/root/ros/msgs/build/micro_ros_msgs', 'env': OrderedDict([('HOSTNAME', '0a0e2ce4e51f'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros/msgs/micro_ros_msgs'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('PWD', '/root/ros/msgs/build/micro_ros_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.967505] (micro_ros_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.967702] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__cpp\x1b[0m\n'}
+[0.975990] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.999193] (-) TimerEvent: {}
+[1.099539] (-) TimerEvent: {}
+[1.199844] (-) TimerEvent: {}
+[1.238195] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] Built target micro_ros_msgs__cpp\n'}
+[1.248484] (micro_ros_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.248722] (micro_ros_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.249168] (micro_ros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.264340] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.276067] (micro_ros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__functions.c.o\x1b[0m\n'}
+[1.278384] (micro_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__functions.c.o\x1b[0m\n'}
+[1.278550] (micro_ros_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__functions.c.o\x1b[0m\n'}
+[1.299924] (-) TimerEvent: {}
+[1.319214] (micro_ros_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libmicro_ros_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.358687] (micro_ros_msgs) StdoutLine: {'line': b'[ 19%] Built target micro_ros_msgs__rosidl_generator_c\n'}
+[1.368009] (micro_ros_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.369701] (micro_ros_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.400008] (-) TimerEvent: {}
+[1.500289] (-) TimerEvent: {}
+[1.547648] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.566239] (micro_ros_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/graph__type_support.cpp.o\x1b[0m\n'}
+[1.566951] (micro_ros_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/node__type_support.cpp.o\x1b[0m\n'}
+[1.567547] (micro_ros_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/entity__type_support.cpp.o\x1b[0m\n'}
+[1.600350] (-) TimerEvent: {}
+[1.608244] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.629687] (micro_ros_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/graph__type_support.cpp.o\x1b[0m\n'}
+[1.643345] (micro_ros_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/node__type_support.cpp.o\x1b[0m\n'}
+[1.653249] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.680508] (micro_ros_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/graph__type_support.cpp.o\x1b[0m\n'}
+[1.700422] (-) TimerEvent: {}
+[1.737393] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[1.753665] (micro_ros_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/graph__type_support.cpp.o\x1b[0m\n'}
+[1.800577] (micro_ros_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/node__type_support.cpp.o\x1b[0m\n'}
+[1.800821] (-) TimerEvent: {}
+[1.804802] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.822135] (micro_ros_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/graph__type_support.c.o\x1b[0m\n'}
+[1.839829] (micro_ros_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/entity__type_support.cpp.o\x1b[0m\n'}
+[1.873310] (micro_ros_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/node__type_support.c.o\x1b[0m\n'}
+[1.880027] (micro_ros_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.902557] (-) TimerEvent: {}
+[1.923944] (micro_ros_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/entity__type_support.c.o\x1b[0m\n'}
+[1.938219] (micro_ros_msgs) StdoutLine: {'line': b'[ 51%] Built target micro_ros_msgs__rosidl_typesupport_c\n'}
+[1.948517] (micro_ros_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/entity__type_support.cpp.o\x1b[0m\n'}
+[1.949837] (micro_ros_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/node__type_support.cpp.o\x1b[0m\n'}
+[1.952359] (micro_ros_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.952865] (micro_ros_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/entity__type_support.cpp.o\x1b[0m\n'}
+[1.987311] (micro_ros_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libmicro_ros_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.002644] (-) TimerEvent: {}
+[2.025055] (micro_ros_msgs) StdoutLine: {'line': b'[ 61%] Built target micro_ros_msgs__rosidl_typesupport_cpp\n'}
+[2.070473] (micro_ros_msgs) StdoutLine: {'line': b'[ 61%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c\n'}
+[2.103479] (-) TimerEvent: {}
+[2.203892] (-) TimerEvent: {}
+[2.304232] (-) TimerEvent: {}
+[2.370589] (micro_ros_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.404289] (-) TimerEvent: {}
+[2.448259] (micro_ros_msgs) StdoutLine: {'line': b'[ 63%] Built target micro_ros_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.504400] (-) TimerEvent: {}
+[2.534024] (micro_ros_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.604461] (-) TimerEvent: {}
+[2.610779] (micro_ros_msgs) StdoutLine: {'line': b'[ 65%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.621234] (micro_ros_msgs) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.704553] (-) TimerEvent: {}
+[2.804980] (-) TimerEvent: {}
+[2.888153] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.902821] (micro_ros_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/entity__type_support_c.cpp.o\x1b[0m\n'}
+[2.903039] (micro_ros_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/graph__type_support_c.cpp.o\x1b[0m\n'}
+[2.903118] (micro_ros_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/node__type_support_c.cpp.o\x1b[0m\n'}
+[2.905042] (-) TimerEvent: {}
+[3.005320] (-) TimerEvent: {}
+[3.105668] (-) TimerEvent: {}
+[3.206012] (-) TimerEvent: {}
+[3.243469] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.306062] (-) TimerEvent: {}
+[3.310964] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.319073] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs\x1b[0m\n'}
+[3.328192] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs\n'}
+[3.335705] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__py\x1b[0m\n'}
+[3.344582] (micro_ros_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.406119] (-) TimerEvent: {}
+[3.506811] (-) TimerEvent: {}
+[3.607035] (-) TimerEvent: {}
+[3.707235] (-) TimerEvent: {}
+[3.807454] (-) TimerEvent: {}
+[3.832882] (micro_ros_msgs) StdoutLine: {'line': b'[ 78%] Built target micro_ros_msgs__py\n'}
+[3.839859] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__python\x1b[0m\n'}
+[3.882893] (micro_ros_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__python.dir/rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c.o\x1b[0m\n'}
+[3.883958] (micro_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__python.dir/rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c.o\x1b[0m\n'}
+[3.884044] (micro_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__python.dir/rosidl_generator_py/micro_ros_msgs/msg/_node_s.c.o\x1b[0m\n'}
+[3.907539] (-) TimerEvent: {}
+[3.964347] (micro_ros_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/libmicro_ros_msgs__python.so\x1b[0m\n'}
+[3.994649] (micro_ros_msgs) StdoutLine: {'line': b'[ 87%] Built target micro_ros_msgs__python\n'}
+[4.003431] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.003653] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.003711] (micro_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.007561] (-) TimerEvent: {}
+[4.020815] (micro_ros_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.021194] (micro_ros_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.021476] (micro_ros_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.100661] (micro_ros_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.101116] (micro_ros_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.107668] (-) TimerEvent: {}
+[4.108654] (micro_ros_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.133273] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.133436] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_c__pyext\n'}
+[4.169463] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.181561] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[4.207809] (-) TimerEvent: {}
+[4.246246] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'install'}
+[4.257055] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros/msgs/build/micro_ros_msgs'], 'cwd': '/root/ros/msgs/build/micro_ros_msgs', 'env': OrderedDict([('HOSTNAME', '0a0e2ce4e51f'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros/msgs/micro_ros_msgs'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('PWD', '/root/ros/msgs/build/micro_ros_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.264065] (micro_ros_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.264589] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/micro_ros_msgs\n'}
+[4.264724] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs\n'}
+[4.265074] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg\n'}
+[4.265411] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail\n'}
+[4.265556] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__functions.c\n'}
+[4.265667] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__functions.h\n'}
+[4.265847] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__type_support.h\n'}
+[4.266071] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__struct.h\n'}
+[4.266175] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__functions.h\n'}
+[4.266762] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__struct.h\n'}
+[4.266945] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__type_support.h\n'}
+[4.267054] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__functions.c\n'}
+[4.267124] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__functions.c\n'}
+[4.267192] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__struct.h\n'}
+[4.267241] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__type_support.h\n'}
+[4.267280] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__functions.h\n'}
+[4.267319] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.267362] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/graph.h\n'}
+[4.267400] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/entity.h\n'}
+[4.267438] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/node.h\n'}
+[4.267576] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.sh\n'}
+[4.267742] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.dsv\n'}
+[4.268135] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so\n'}
+[4.268348] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so" to ""\n'}
+[4.268612] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs\n'}
+[4.268696] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg\n'}
+[4.268756] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail\n'}
+[4.268807] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_c.h\n'}
+[4.268871] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_c.h\n'}
+[4.269526] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_c.h\n'}
+[4.269593] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.269638] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.269908] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.270096] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs\n'}
+[4.270383] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg\n'}
+[4.270479] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail\n'}
+[4.270529] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/dds_fastrtps\n'}
+[4.270629] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.270695] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.270868] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.271004] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.271078] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.271131] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.271380] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs\n'}
+[4.271490] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg\n'}
+[4.271632] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail\n'}
+[4.271746] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__type_support.c\n'}
+[4.271853] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__type_support.c\n'}
+[4.271959] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_c.h\n'}
+[4.272070] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_c.h\n'}
+[4.272280] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__type_support.c\n'}
+[4.272411] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_c.h\n'}
+[4.272470] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.272575] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.272681] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.272786] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so\n'}
+[4.273029] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so" to ""\n'}
+[4.273123] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs\n'}
+[4.273235] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg\n'}
+[4.273340] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail\n'}
+[4.273445] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__struct.hpp\n'}
+[4.273580] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__builder.hpp\n'}
+[4.273692] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__builder.hpp\n'}
+[4.273806] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__struct.hpp\n'}
+[4.273924] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__struct.hpp\n'}
+[4.274136] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__traits.hpp\n'}
+[4.274185] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__traits.hpp\n'}
+[4.274233] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__builder.hpp\n'}
+[4.274282] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__traits.hpp\n'}
+[4.274420] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/node.hpp\n'}
+[4.274555] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/graph.hpp\n'}
+[4.274671] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/entity.hpp\n'}
+[4.274782] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs\n'}
+[4.274892] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg\n'}
+[4.275004] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail\n'}
+[4.275115] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__type_support.cpp\n'}
+[4.275224] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.275343] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__type_support.cpp\n'}
+[4.275469] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.275619] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.275722] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/include/micro_ros_msgs/msg/detail/node__type_support.cpp\n'}
+[4.275801] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.275896] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.276149] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so\n'}
+[4.276219] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[4.276803] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.sh\n'}
+[4.276853] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.dsv\n'}
+[4.276892] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/__init__.py\n'}
+[4.301576] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/__init__.py'...\n"}
+[4.304345] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/msg\n'}
+[4.304715] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/msg/_node.py\n'}
+[4.304860] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/msg/_entity.py\n'}
+[4.305065] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/msg/_graph.py\n'}
+[4.305117] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/msg/__init__.py\n'}
+[4.305168] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/msg/_graph_s.c\n'}
+[4.305233] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/msg/_node_s.c\n'}
+[4.305312] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/msg/_entity_s.c\n'}
+[4.305533] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.305647] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.306837] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.306930] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.306974] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.307904] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/python3.8/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.308017] (-) TimerEvent: {}
+[4.308381] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__python.so\n'}
+[4.308793] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros/msgs/install/micro_ros_msgs/lib/libmicro_ros_msgs__python.so" to ""\n'}
+[4.309083] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.idl\n'}
+[4.309344] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.idl\n'}
+[4.309413] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.idl\n'}
+[4.309510] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.msg\n'}
+[4.309590] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.msg\n'}
+[4.309675] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.msg\n'}
+[4.309725] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/ament_index/resource_index/package_run_dependencies/micro_ros_msgs\n'}
+[4.309915] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/ament_index/resource_index/parent_prefix_path/micro_ros_msgs\n'}
+[4.309999] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.sh\n'}
+[4.310069] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.dsv\n'}
+[4.310133] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.sh\n'}
+[4.310385] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.dsv\n'}
+[4.310518] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.bash\n'}
+[4.310586] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.sh\n'}
+[4.310802] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.zsh\n'}
+[4.310847] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.dsv\n'}
+[4.310895] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv\n'}
+[4.310959] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/ament_index/resource_index/packages/micro_ros_msgs\n'}
+[4.311152] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_generator_cExport.cmake\n'}
+[4.311279] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.311484] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.311774] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.311925] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.312053] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.312272] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.312749] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.312953] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.313046] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.313108] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.313167] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.313218] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.313284] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.313364] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.313683] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.313742] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.313782] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.313820] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig.cmake\n'}
+[4.313859] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig-version.cmake\n'}
+[4.313899] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /root/ros/msgs/install/micro_ros_msgs/share/micro_ros_msgs/package.xml\n'}
+[4.317040] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[4.408123] (-) TimerEvent: {}
+[4.430989] (micro_ros_msgs) JobEnded: {'identifier': 'micro_ros_msgs', 'rc': 0}
+[4.432082] (-) EventReactorShutdown: {}

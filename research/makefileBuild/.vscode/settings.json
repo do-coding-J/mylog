@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "rte_components.h": "c",
+        "arm_cmse.h": "c",
+        "stdint.h": "c"
+    }
+}
