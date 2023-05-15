@@ -1,5 +1,5 @@
 # mylog
 
 ```
-this is study log not from work
+this is study log out of work
 ```
