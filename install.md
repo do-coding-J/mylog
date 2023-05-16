@@ -2,18 +2,22 @@
 ```
 sudo apt-get update && sudo apt-get upgrade  
 
-sudo apt-get install \
+sudo apt-get install -y \
 make cmake build-essential ruby \
 openjdk-11-jdk pkg-config libncurses-dev libncurses5 
 ibusb-1.0-0-dev autotools-dev bc flex bison libssl-dev libelf-dev \
 dwarves debhelper libxrender1 wget ca-certificates tar \
 g++ git autogen graphviz libboost-dev libboost-test-dev libgtest-dev libtool \
-python3-sip-dev doxygen python3-sphinx pkg-config python3-sphinx-rtd-theme
+python3-sip-dev doxygen python3-sphinx pkg-config python3-sphinx-rtd-theme \
+linux-tools-generic hwdata
 ```
 
 # arm-none-eabi compiler
 ```
 # arm-none-eabi compiler install.sh
+mkdir compiler
+cd compiler
+
 wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2
 
 sudo tar xjf gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2 -C /usr/share/
@@ -25,6 +29,7 @@ sudo ln -s /usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-objcopy /
 sudo ln -s /usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-size /usr/bin/arm-none-eabi-size
 sudo ln -s /usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-nm /usr/bin/arm-none-eabi-nm
 sudo ln -s /usr/share/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-objdump /usr/bin/arm-none-eabi-objdump
+cd ..
 ```
 
 # googletest
@@ -41,7 +46,7 @@ cd ..
 
 # cubemx
 ```
-# download file : https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/20/84/df/4d/db/30/44/b3/stm32cubemx-lin-v6-8-1/files/stm32cubemx-lin-v6-8-1.zip/jcr:content/translations/en.stm32cubemx-lin-v6-8-1.zip
+# download file from website
 
 # cubemx install.sh
 unzip en.stm32cubemx-lin-v6-8-1.zip
@@ -52,8 +57,7 @@ source ~/.bashrc
 
 # cubeide (stlink)
 ```
-# download file : https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/30/a8/7a/1c/24/19/42/c0/stm32cubeide-lnx/files/st-stm32cubeide_1.12.1_16088_20230420_1057_amd64.sh.zip/jcr:content/translations/en.st-stm32cubeide_1.12.1_16088_20230420_1057_amd64.sh.zip
-
+# download file from website
 # cubeide (stlink) install.sh
 unzip en.st-stm32cubeide_1.12.1_16088_20230420_1057_amd64.sh.zip
 sudo ./en.st-stm32cubeide_1.12.1_16088_20230420_1057_amd64.sh
@@ -69,7 +73,6 @@ source ~/.bashrc
 ## wsl
 ```
 # wsl install.sh
-sudo apt install linux-tools-generic hwdata
 sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/*-generic/usbip 20
 ```
 
