@@ -7,14 +7,9 @@ make cmake build-essential ruby \
 openjdk-11-jdk pkg-config libncurses-dev libncurses5 nautilus \
 ibusb-1.0-0-dev autotools-dev bc flex bison libssl-dev libelf-dev \
 dwarves debhelper libxrender1 wget ca-certificates tar \
-<<<<<<< HEAD
 g++ git autogen graphviz libboost-dev libboost-test-dev libgtest-dev libtool \
 python3-sip-dev doxygen python3-sphinx pkg-config python3-sphinx-rtd-theme \
 linux-tools-generic hwdata
-=======
-g++ gdb git autogen graphviz libboost-dev libboost-test-dev libgtest-dev libtool \
-python3-sip-dev doxygen python3-sphinx pkg-config python3-sphinx-rtd-theme
->>>>>>> 43aa7ee (install fix)
 ```
 
 # arm-none-eabi compiler
@@ -103,8 +98,6 @@ update GTEST_LOCATION
 ./compile
 sudo make -C install
 ```
-<<<<<<< HEAD
-=======
 
 # stlink-tools
 ```
@@ -112,9 +105,9 @@ git clone https://github.com/stlink-org/stlink.git
 cd stlink
 make clean
 make release
+make test
 sudo make install
 make debug
-make package
 sudo ldconfig
+cd ..
 ```
->>>>>>> 43aa7ee (install fix)
