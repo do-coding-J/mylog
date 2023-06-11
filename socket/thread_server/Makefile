@@ -24,6 +24,10 @@ sigaction:
 	rm -rf sigaction
 	gcc sigaction.c -o sigaction
 
-move_zombie:
-	rm -rf move_zombie
-	gcc move_zombie.c -o move_zombie
+remove_zombie:
+	rm -rf remove_zombie
+	gcc remove_zombie.c -o remove_zombie
+
+multi_echo_serv:
+	rm -rf multi_echo_serv
+	gcc multi_echo_serv.c -o multi_echo_serv
