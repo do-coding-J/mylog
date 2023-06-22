@@ -74,7 +74,7 @@ int main(int argc, char const *argv[])
         }
         if(pid == 0) // if this id is child proc
         {
-            close(serv_sock); // no need
+            close(serv_sock); // no need close server socket
 
             while((str_len = read(clnt_sock, buf, BUF_SIZE)) != 0) // transmission
                 write(clnt_sock, buf, BUF_SIZE);
