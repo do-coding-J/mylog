@@ -40,3 +40,11 @@ F --> G
 5. IR sensor(ant detecting sensor possible) x2
 6. key pad module
 
+#### 회로도
+대충 그림
+
+#### Foot Print
+표시만 함 (에러)
+
+#### pcb
+(에러)
