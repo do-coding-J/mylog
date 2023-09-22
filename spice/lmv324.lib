@@ -1,0 +1,31 @@
+* LMV324 모델 라이브러리 파일
+.include mos.lib
+
+* 모델 정의
+.subckt LMV324 1 2 3
+* 모델 파라미터 설정
+.param DC_GAIN=100K
+.param GBW=1M
+.param OFFSET=1mV
+.param CMRR=90dB
+
+* 입력 스테이지
+M1 5 1 6 0 N_1 NMOS W=1u L=0.18u
+M2 5 2 6 0 N_2 NMOS W=1u L=0.18u
+M3 6 6 0 0 N_3 NMOS W=1u L=0.18u
+M4 7 1 6 0 P_1 PMOS W=2u L=0.18u
+M5 7 2 6 0 P_2 PMOS W=2u L=0.18u
+M6 7 7 0 0 P_3 PMOS W=2u L=0.18u
+
+* 중간 스테이지 (오픈 루프 게인)
+G1 5 0 7 0 1e-6
+G2 0 6 7 0 1e-6
+
+* 출력 스테이지
+M7 8 1 0 0 N_4 NMOS W=2u L=0.18u
+M8 8 2 0 0 N_5 NMOS W=2u L=0.18u
+M9 8 0 0 0 N_6 NMOS W=2u L=0.18u
+M10 8 8 0 0 P_4 PMOS W=4u L=0.18u
+
+* 출력
+.ends
