@@ -1,0 +1,60 @@
+$date
+	Sun Sep 24 16:14:43 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ms
+$end
+$scope module tb_test_wor $end
+$scope module _test_wor $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var wire 1 # c $end
+$var wire 1 $ d $end
+$var wire 1 % e $end
+$var wire 1 & f $end
+$var wire 1 ' g $end
+$var wire 1 ( h $end
+$var wire 1 ) i $end
+$var wire 1 * y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#1
+1*
+1!
+#2
+1"
+#3
+1#
+#4
+1$
+#5
+1%
+#6
+1&
+#7
+1'
+#8
+1(
+#9
+1)
+#10
