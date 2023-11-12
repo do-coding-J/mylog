@@ -111,3 +111,20 @@ make debug
 sudo ldconfig
 cd ..
 ```
+
+
+# stm32 cmake build
+```
+example :
+https://github.com/rgujju/STM32_Base_Project.git
+
+CMSIS : 
+https://github.com/ARM-software/CMSIS_5.git
+F4 HAL : 
+https://github.com/STMicroelectronics/stm32f4xx_hal_driver.git
+RTOS : 
+https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+FFF : 
+https://github.com/meekrosoft/fff.git
+
+```
