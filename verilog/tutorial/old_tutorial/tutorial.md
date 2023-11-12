@@ -200,3 +200,72 @@ begin
 ```
 
 ### 12. timing controls
+1. delay based
+  - fixed time delay
+> example : #num statement;
+> register = #num expr;
+
+2. Event based
+  - delay fixed value with recognizing list (simillar to if)
+> example : @ (signal) statement;
+>           @ (posedge signal) statement;
+>           @ (negedge signal) statement;
+>           register = @(signal) expr;
+>           always @ (s1 or s2 or s3)
+
+3. named event
+  - name an event like function
+> example : event my_event;
+>           always @ (my_event)
+>           begin
+>             ...
+>           end
+>
+>           always
+>           begin
+>             ...
+>             if(...)
+>               -> my_event;
+>             ...
+>           end
+
+### 13. Conditional Statements
+1. if then else
+> if-then-else example
+> if(expr)
+>   statement;
+> 
+> if(expr)
+>   statement;
+> else
+>   statement;
+>
+> if(expr) statement;
+> else if(expr) statement;
+> else if(expr) statement;
+> else statement;
+
+2. case
+> case(expr)
+>   value1 : statement;
+>   value2 : statement;
+>   ...
+>   default : statement;
+> endcase
+
+### 14. loop
+1. while
+> while(expr)
+>   statement;
+
+2. for
+> for( init ; expr ; step)
+>   statement;
+
+3. repeat (loop for constant value)
+> repeat(constant)
+>   statement;
+
+4. forever (same as while)
+> forever
+>   statement; 
