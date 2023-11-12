@@ -1,0 +1,12 @@
+[submodule "CMSIS_5"]
+	path = stm32/CMSIS_5
+	url = https://github.com/ARM-software/CMSIS_5.git
+[submodule "stm32/stm32f4xx_hal_driver"]
+	path = stm32/stm32f4xx_hal_driver
+	url = https://github.com/STMicroelectronics/stm32f4xx_hal_driver.git
+[submodule "stm32/FreeRTOS-Kernel"]
+	path = stm32/FreeRTOS-Kernel
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+[submodule "stm32/fff"]
+	path = stm32/fff
+	url = https://github.com/meekrosoft/fff.git
