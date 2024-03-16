@@ -10,3 +10,6 @@
 [submodule "stm32/fff"]
 	path = component/stm32/fff
 	url = https://github.com/meekrosoft/fff.git
+[submodule "stm32/STM32_Base_Project"]
+	path = stm32/STM32_Base_Project
+	url = https://github.com/rgujju/STM32_Base_Project.git
