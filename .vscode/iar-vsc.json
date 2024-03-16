@@ -1,0 +1,15 @@
+{
+  "workspace": {
+    "path": "${workspaceFolder}/stm32/component/CMSIS_5/CMSIS/RTOS2/RTX/Library/IAR/IDE/RTX_CM.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}/stm32/component/CMSIS_5/CMSIS/RTOS2/RTX/Library/IAR/IDE/RTX_CM.eww": {
+      "configs": {
+        "${workspaceFolder}/stm32/component/CMSIS_5/CMSIS/RTOS2/RTX/Library/IAR/IDE/RTX_CM.ewp": "CM0"
+      },
+      "selected": {
+        "path": "${workspaceFolder}/stm32/component/CMSIS_5/CMSIS/RTOS2/RTX/Library/IAR/IDE/RTX_CM.ewp"
+      }
+    }
+  }
+}
