@@ -5,83 +5,33 @@ from ma import get_moving_average
 from rsi import get_rsi
 from macd import get_macd
 from bolinger import get_bolinger
-
-# 회사
-# access_key = 'stxke0a2rLTw8SaA14X1bPQoskS7eRsAPlrlHF8w'
-# secret_key = 'wCUsmHh2ipIM2D3J2hM0huDAvidUrpqQDcBqZXra'
-# 집
-access_key = 'ITNyUUhhogFWMbzL0BHQKcToJwfNfqlDDBBuXnvx'
-secret_key = 'FboTePoLf7ULrwJwmIJx3vtHPD9xOPtRrxtxD492'
-
-upbit = pyupbit.Upbit(access_key, secret_key)
-
-# tickers = pyupbit.get_tickers()
-# print(tickers)
-# print(type(tickers))
-
-# krw_tickers = pyupbit.get_tickers("KRW")
-# print(krw_tickers)
-# print(type(krw_tickers))
+from transaction import *
+import datetime
 
 krw = "KRW"
 btc = "BTC"
 
-target_ticker = krw+"-"+btc
+target_ticker = krw + "-" + btc
 
-# minute1 = pyupbit.get_ohlcv(target_ticker, "minute1")
-# print(minute1)
-# print(type(minute1))
+"""
+매매 전략 
+매수 : 
+    1. 볼린저 밴드가 연속으로 2번 이상 lower_band보다 떨어지는 경우
+    2. MACD에서 신호선보다 일정 비율로 높아질 경우
+    3. RSI에서 신호선 보다 위에 있는 경우
+    4. 이평선 20이 이평선 60보다 높아질 경우
+    5. 이평선 60이 이평선 120보다 높아질 경우
+    6. 수익이 -10% 이하 일 경우
 
-# minute10 = pyupbit.get_ohlcv(target_ticker, "minute10")
-# print(minute10)
-# print(type(minute10))
+매도 :
+    1. 수익이 5%이상 났을 경우
+    2. 수익이 -20%이하로 떨어졌을 경우 -> 알림
+    3. 볼린저 밴드가 연속으로 2번 이상 upper_band보다 높아지는 경우
+    4. MACD에서 신호선보다 일정 비율로 낮아질 경우
+    5. RSI에서 신호선 보다 밑에 있는 경우
+    6. 이평선 20이 이평선 60보다 낮아질 경우
+    7. 이평선 60이 이평선 120보다 낮아질 경우
+"""
 
-# minute60 = pyupbit.get_ohlcv(target_ticker, "minute60")
-# print(minute60)
-# print(type(minute60))
-
-# day1 = pyupbit.get_ohlcv(target_ticker, "day")
-# print(day1)
-# print(type(day1))
-
-# week1 = pyupbit.get_ohlcv(target_ticker, "week")
-# print(week1)
-# print(type(week1))
-
-# month1 = pyupbit.get_ohlcv(target_ticker, "month")
-# print(month1)
-# print(type(month1))
-
-target_interval = "minute1"
-
-
-
-# 이평선 계산
-test_ticker = target_ticker
-test_interval = target_interval
-test_window = 20
-moving_avg = get_moving_average(target_ticker, test_interval, test_window)
-# print(moving_avg)
-
-# rsi 계산
-test_interval = "minute10"
-test_rsi_count = 14
-test_rsi_signal_count = 9
-rsi_val = get_rsi(test_ticker, test_interval, test_rsi_count)
-rsi_sig = get_rsi(test_ticker, test_interval, test_rsi_signal_count)
-
-# print(rsi_val, rsi_sig)
-
-# macd 계산
-test_interval_fast = 12
-test_interval_slow = 26
-test_interval_signal = 9
-
-macd, macd_sig = get_macd(test_ticker, test_interval, test_interval_fast, test_interval_slow, test_interval_signal)
-# print(macd)
-# print(macd_sig)
-
-# bolinger band
-upper_band, sma, lower_band = get_bolinger(test_ticker)
-print(upper_band)
-print(lower_band)
+# 백테스트 방법
+print(pyupbit.get_ohlcv_from(ticker=target_ticker, interval="minute10", fromDatetime=datetime.datetime(2024, 1, 1, 0, 0, 0), to=datetime.datetime(2024, 3, 1, 0, 0, 0)))
