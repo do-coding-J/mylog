@@ -16,6 +16,10 @@ target_ticker = krw + "-" + btc
 
 """
 매매 전략 
+지표 순위 :
+
+볼린저 밴드는 DAY로만 측정 하기
+
 매수 : 
     1. 볼린저 밴드가 연속으로 2번 이상 lower_band보다 떨어지는 경우
     2. MACD에서 신호선보다 일정 비율로 높아질 경우
@@ -36,6 +40,7 @@ target_ticker = krw + "-" + btc
 
 # 백테스트 방법
 # print(pyupbit.get_ohlcv_from(ticker=target_ticker, interval="minute10", fromDatetime=datetime.datetime(2024, 1, 1, 0, 0, 0), to=datetime.datetime(2024, 3, 1, 0, 0, 0)))
+
 
 plot_bolinger_band(get_bolinger(target_ticker, "minute1"))
 # print(check_bolinger_signal(target_ticker))

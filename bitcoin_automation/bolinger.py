@@ -2,7 +2,7 @@ from price_data import get_price
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def get_bolinger(ticker, interval='minute', count=200, window=20, num_std_dev=2):
+def get_bolinger(ticker, interval='day', count=200, window=20, num_std_dev=2):
     price_data = get_price(ticker=ticker, interval=interval, count=count)
     
     sma = price_data['close'].rolling(window=window).mean()
@@ -46,7 +46,7 @@ def plot_bolinger_band(bolinger_df):
     plt.show()
     
     
-def check_bolinger_signal(ticker, interval="minute1"):
+def check_bolinger_signal(ticker, interval="day"):
     # 1분 기준 떨어지면 -1 올라가면 1 그 외는 0
     ret_df = get_bolinger(ticker=ticker, interval=interval)
     
