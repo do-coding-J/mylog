@@ -1,12 +1,13 @@
-import csv
 import pyupbit
 from macd import get_macd
 from ma import get_moving_average
+from price_data import get_price
 from rsi import get_rsi
 from macd import get_macd
-from bolinger import get_bolinger
+from bolinger import check_bolinger_signal, get_bolinger, plot_bolinger_band
 from transaction import *
 import datetime
+import pandas as pd
 
 krw = "KRW"
 btc = "BTC"
@@ -34,4 +35,8 @@ target_ticker = krw + "-" + btc
 """
 
 # 백테스트 방법
-print(pyupbit.get_ohlcv_from(ticker=target_ticker, interval="minute10", fromDatetime=datetime.datetime(2024, 1, 1, 0, 0, 0), to=datetime.datetime(2024, 3, 1, 0, 0, 0)))
+# print(pyupbit.get_ohlcv_from(ticker=target_ticker, interval="minute10", fromDatetime=datetime.datetime(2024, 1, 1, 0, 0, 0), to=datetime.datetime(2024, 3, 1, 0, 0, 0)))
+
+plot_bolinger_band(get_bolinger(target_ticker, "minute1"))
+# print(check_bolinger_signal(target_ticker))
+# get_price(target_ticker).to_csv('price.csv')
