@@ -1,7 +1,0 @@
-* SPICE 라이브러리 파일
-
-* 일반 NMOS 모델
-.model NMOS NMOS(Level=3 Vto=0.6 KP=60u W=1u L=0.18u)
-
-* 일반 PMOS 모델
-.model PMOS PMOS(Level=3 Vto=-0.6 KP=60u W=1u L=0.18u)
