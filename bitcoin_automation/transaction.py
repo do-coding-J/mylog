@@ -52,6 +52,9 @@ def buy_money(ticker, price, money):
             )
     except Exception as e:
         logging.error(f"매수 주문 중 예상치 못한 오류 발생: {e}", exc_info=True)
+        logging.info(
+                f"{ticker} {price}원에 {amount}개 매수 주문 시도 id : {order_id}"
+            )
 
 
 def sell(ticker, price, amount):
@@ -70,20 +73,29 @@ def sell(ticker, price, amount):
             )
     except Exception as e:
         logging.error(f"매도 주문 중 예상치 못한 오류 발생: {e}", exc_info=True)
+        logging.info(
+                f"{ticker} {price}원에 {amount}개 매도 주문 시도 id : {order_id}"
+            )
 
+def get_balance(ticker):
+    """
+    특정 코인에 대한 보유량과 매수 평균 가격을 조회합니다.
 
-def get_balance():
+    :param ticker: 조회할 코인의 티커 (예: "KRW-BTC")
+    :return: 보유량과 매수 평균 가격
+    """
     try:
-        balance = upbit.get_balances()
-        for coin in balance:
-            if coin["currency"] == "KRW":
-                logging.info(f"보유 현금: {coin['balance']}")
-            else:
-                logging.info(f"보유 코인: {coin['currency']}, 잔고: {coin['balance']}")
-        return balance
+        balances = upbit.get_balances()
+        for balance in balances:
+            if balance["currency"] == ticker.replace("KRW-", ""):
+                avg_buy_price = float(balance["avg_buy_price"])  # 매수 평균 가격
+                holding_amount = float(balance["balance"])  # 보유량
+                return holding_amount, avg_buy_price
     except Exception as e:
         logging.error(f"잔고 조회 중 예상치 못한 오류 발생: {e}", exc_info=True)
-        return None
+        logging.info(f"{balances}")
+        return 0, 0
+    return 0, 0  # 해당 코인을 보유하지 않는 경우
 
 
 def cancel_order(order_id):
@@ -123,6 +135,9 @@ def check_and_handle_order_status(order_id, ticker, wait_time=60, check_interval
     if cancel_result:
         logging.info(f"주문 {order_id} 체결 대기 시간 초과, 주문 취소 시도 성공")
     else:
-        logging.error(f"주문 {order_id} 체결 대기 시간 초과, 주문 취소 시도 실패", exc_info=True)
-    
+        logging.error(
+            f"주문 {order_id} 체결 대기 시간 초과, 주문 취소 시도 실패", exc_info=True
+        )
+        
+
     return False

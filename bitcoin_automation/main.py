@@ -1,28 +1,83 @@
-from logic import *
 import time
+import logging
+import datetime
+from transaction import *
+from indicators import *
+from logic import *
 
-krw = "KRW"
-btc = "BTC"
-
-target_ticker = krw + "-" + btc
-
-
-# 백테스트 방법
-# print(pyupbit.get_ohlcv_from(ticker=target_ticker, interval="minute10", fromDatetime=datetime.datetime(2024, 1, 1, 0, 0, 0), to=datetime.datetime(2024, 3, 1, 0, 0, 0)))
-
+logging.basicConfig(
+    filename="trading.log",
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
 
 def trading_bot():
-    ticker = target_ticker
+    ticker = "KRW-BTC"
     while True:
         try:
-            df = pyupbit.get_ohlcv(ticker=ticker, interval="minute5")
-            trading_logic(df)
+            # 여기서는 ticker만 전달합니다.
+            trading_logic(ticker)
         except Exception as e:
-            print(f"트레이딩 봇 실행 중 오류 발생: {e}")
+            # 오류 발생 시 logging을 사용합니다.
+            logging.error(f"트레이딩 봇 실행 중 오류 발생: {e}")
 
-        time.sleep(60)  # 1분마다 반복 (주기는 전략에 따라 조정 가능)
+        # 1분마다 반복. 전략에 따라 조정 가능합니다.
+        time.sleep(60)
 
+def simulate_trading(should_buy, should_sell, ticker, start_date, end_date, interval='day'):
+    cash = 1000000  # 초기 자본금
+    holding = 0  # 보유량
+    avg_buy_price = 0  # 평균 매수 가격
+    trade_log = []  # 거래 기록
 
+    current_date = start_date
+    while current_date <= end_date:
+        print(current_date)
+        # 데이터 불러오기
+        df = pyupbit.get_ohlcv(ticker, interval=interval, to=current_date.strftime('%Y-%m-%d'))
+        if df is None or df.empty:
+            print("데이터를 불러오는 데 실패했습니다.")
+            break
+        df = calculate_macd(df)
+        df = calculate_rsi(df)
+        df = calculate_moving_averages(df)
+        current_price = df.iloc[-1]['close']
+        
+        if should_buy(df) and cash > 0:
+            # 매수
+            holding = cash / current_price
+            cash = 0
+            avg_buy_price = current_price
+            trade_log.append({'date': current_date, 'action': 'BUY', 'price': current_price})
+        
+            logging.info(f"buy")
+        elif should_sell(df, ticker, current_price, holding, avg_buy_price) and holding > 0:  # 수정된 부분
+            # 매도
+            cash = holding * current_price
+            holding = 0
+            avg_buy_price = 0  # 매도 후 평균 매수 가격 리셋
+            trade_log.append({'date': current_date, 'action': 'SELL', 'price': current_price})
+            logging.info(f"sell")
+        else :
+            logging.info(f"hold")
+        
+        logging.info(f"date {current_date}, cash : {cash}, holding : {holding}, current price : {current_price}")
+        # 다음 날짜로 이동
+        current_date += datetime.timedelta(days=1)
+
+    final_value = cash + (holding * current_price if holding > 0 else 0)  # 최종 자산 가치
+    return final_value, trade_log
+
+# 시뮬레이션 실행
+ticker = "KRW-BTC"
+
+final_value, trade_log = simulate_trading(should_buy, should_sell, ticker, datetime.datetime(2024,1,1,0,0,0), datetime.datetime(2024,3,30,0,0,0))
+
+print(f"최종 자산 가치: {final_value}")
+for log in trade_log:
+    print(log)
+    
 """
 보충 내용
 `logic.py`, `indicators.py`, 그리고 `transaction.py` 파일을 통해 구성한 알고리즘 트레이딩 시스템에는 몇 가지 보충해야 할 부분이 있습니다. 이러한 부분들을 보완하면 시스템의 효율성과 안정성을 높일 수 있습니다.
