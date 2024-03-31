@@ -25,15 +25,19 @@ def trading_bot():
         # 1분마다 반복. 전략에 따라 조정 가능합니다.
         time.sleep(60)
 
-def simulate_trading(should_buy, should_sell, ticker, start_date, end_date, interval='day'):
-    cash = 1000000  # 초기 자본금
+def simulate_trading(initial_cash, should_buy, should_sell, ticker, start_date, end_date, interval='day'):
+    cash = initial_cash  # 현재 현금
     holding = 0  # 보유량
     avg_buy_price = 0  # 평균 매수 가격
     trade_log = []  # 거래 기록
+    investment_ratio = 0.8  # 투자 비율
+    fee_rate = 0.002  # 수수료율 (예: 0.05%)
+    minimum_order_amount = 5000
+    last_trade_time = None
+    cooldown_minutes = 30 * 4 # 2시간 거래 제한
 
     current_date = start_date
     while current_date <= end_date:
-        print(current_date)
         # 데이터 불러오기
         df = pyupbit.get_ohlcv(ticker, interval=interval, to=current_date.strftime('%Y-%m-%d'))
         if df is None or df.empty:
@@ -44,39 +48,48 @@ def simulate_trading(should_buy, should_sell, ticker, start_date, end_date, inte
         df = calculate_moving_averages(df)
         current_price = df.iloc[-1]['close']
         
-        if should_buy(df) and cash > 0:
-            # 매수
-            holding = cash / current_price
-            cash = 0
-            avg_buy_price = current_price
-            trade_log.append({'date': current_date, 'action': 'BUY', 'price': current_price})
+        can_trade = True if not last_trade_time or (current_date - last_trade_time).total_seconds() > cooldown_minutes * 60 else False
         
-            logging.info(f"buy")
-        elif should_sell(df, ticker, current_price, holding, avg_buy_price) and holding > 0:  # 수정된 부분
-            # 매도
-            cash = holding * current_price
+        if should_buy(df) and cash > minimum_order_amount and holding <= 0 and can_trade:
+            buy_cash = min(cash * investment_ratio, cash - minimum_order_amount)
+            buy_cash_after_fee = buy_cash * (1 - fee_rate)
+            bought_holding = buy_cash_after_fee / current_price
+            cash -= buy_cash
+            holding += bought_holding
+            avg_buy_price = ((avg_buy_price * holding) + (current_price * bought_holding)) / (holding + bought_holding)
+            trade_log.append({'date': current_date, 'action': 'BUY', 'price': current_price, 'amount': bought_holding})
+            logging.info(f"Buy price: {current_price} | Amount: {bought_holding}")
+            last_trade_time = current_date
+            
+        elif should_sell(df, current_price, holding, avg_buy_price) and holding > 0 and can_trade:
+            sell_cash = holding * current_price
+            sell_cash_after_fee = sell_cash * (1 - fee_rate)
+            cash += sell_cash_after_fee
+            trade_log.append({'date': current_date, 'action': 'SELL', 'price': current_price, 'amount': holding})
+            logging.info(f"Sell price: {current_price} | bought at {avg_buy_price} | Amount: {holding}")
             holding = 0
-            avg_buy_price = 0  # 매도 후 평균 매수 가격 리셋
-            trade_log.append({'date': current_date, 'action': 'SELL', 'price': current_price})
-            logging.info(f"sell")
+            avg_buy_price = 0
+            can_trade = current_date
+            
         else :
             logging.info(f"hold")
         
-        logging.info(f"date {current_date}, cash : {cash}, holding : {holding}, current price : {current_price}")
+        logging.info(f"{current_date} cash : {cash}, holding : {holding}, current price : {current_price}")
+        print(f"data : {current_date}, earned : {cash - initial_cash}, last buy price : {avg_buy_price}")
         # 다음 날짜로 이동
-        current_date += datetime.timedelta(days=1)
-
-    final_value = cash + (holding * current_price if holding > 0 else 0)  # 최종 자산 가치
+        current_date += datetime.timedelta(minutes=10)
+        time.sleep(0.05)
+        
+    final_value = cash + (holding * current_price * (1 - fee_rate) if holding > 0 else 0)  # 최종 자산 가치
     return final_value, trade_log
 
 # 시뮬레이션 실행
 ticker = "KRW-BTC"
-
-final_value, trade_log = simulate_trading(should_buy, should_sell, ticker, datetime.datetime(2024,1,1,0,0,0), datetime.datetime(2024,3,30,0,0,0))
-
-print(f"최종 자산 가치: {final_value}")
-for log in trade_log:
-    print(log)
+initial_cash = 1000000  # 초기 자본금
+final_value, trade_log = simulate_trading(initial_cash, should_buy, should_sell, ticker, datetime.datetime(2019,1,1,0,0,0), datetime.datetime(2024,3,30,0,0,0), interval="minute10")
+print(f"시작 자산: {initial_cash}, 최종 자산: {final_value}, 손익 : {initial_cash - final_value}")
+# for log in trade_log:
+#     print(log)
     
 """
 보충 내용

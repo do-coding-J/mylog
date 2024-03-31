@@ -10,26 +10,53 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 
+
 def should_buy(df):
     latest_row = df.iloc[-1]
-    macd_cross_up = (latest_row["macd"] > latest_row["macd_signal"] and latest_row["macd"] < 0)
+    # MACD 상향 돌파 조건
+    macd_cross_up = latest_row["macd"] > latest_row["macd_signal"]
+    # RSI 낮은 수준 조건
     rsi_low = latest_row["rsi"] < 35
-    ma_diff_positive = latest_row["ma_diff"] > 0
-    return macd_cross_up and rsi_low and ma_diff_positive
+    # 이동 평균선 비율 조건
+    ma_diff_positive_rate = (
+        latest_row["ma_diff_rate"] > 0
+    )  # 여기서 0은 변경 가능한 임계값입니다.
 
-def should_sell(df, ticker, current_price, holding_amount, avg_buy_price):
+    logging.info(
+        f"check buy -> macd : {macd_cross_up}({latest_row['macd'] - latest_row['macd_signal']}), rsi : {rsi_low}({latest_row['rsi']}), ma diff : {ma_diff_positive_rate}({latest_row['ma_diff_rate']})"
+    )
+
+    # MACD 또는 RSI 조건과 이동 평균선 비율 조건 중 하나라도 만족하면 매수
+    return (macd_cross_up or rsi_low) and ma_diff_positive_rate
+
+
+def should_sell(df, current_price, holding_amount, avg_buy_price):
     if holding_amount <= 0:
         return False
 
     profit_rate = (current_price - avg_buy_price) / avg_buy_price
-    if profit_rate >= 0.3 or profit_rate <= -0.05:
-        return True
+    # # 익절
+    # if profit_rate >= 1.05:
+    #     logging.info(f"check sell -> profit : {profit_rate}")
+    #     return True
+    # # 손절
+    # if profit_rate <= -1.05:
+    #     logging.info(f"check sell -> profit : {profit_rate}")
+    #     return True
 
     latest_row = df.iloc[-1]
     prev_row = df.iloc[-2]
-    macd_cross_down = (latest_row["macd"] < latest_row["macd_signal"] and prev_row["macd"] > prev_row["macd_signal"])
+    macd_cross_down = (
+        latest_row["macd"] < latest_row["macd_signal"]
+        and prev_row["macd"] > prev_row["macd_signal"]
+    )
     rsi_high = latest_row["rsi"] > 70
-    return macd_cross_down or rsi_high
+
+    logging.info(
+        f"check sell -> macd : {macd_cross_down}({latest_row['macd'] - latest_row['macd_signal']}), rsi : {rsi_high}({latest_row['rsi']}), profit : {profit_rate}"
+    )
+    return (macd_cross_down or rsi_high) and (profit_rate >= 1.05 or profit_rate <= 0.8)
+
 
 def trading_logic(ticker):
     # 데이터 불러오기 및 지표 계산
@@ -37,11 +64,11 @@ def trading_logic(ticker):
     if df is None:
         logging.error("OHLCV 데이터 불러오기 실패")
         return
-    
+
     df = calculate_macd(df)
     df = calculate_rsi(df)
     df = calculate_moving_averages(df)
-    
+
     current_price = pyupbit.get_current_price(ticker)
     if current_price is None:
         logging.error("현재 가격 조회 실패")
@@ -49,7 +76,7 @@ def trading_logic(ticker):
 
     # 보유한 코인의 정보 조회
     holding_amount, avg_buy_price = get_balance(ticker)
-    
+
     # 매수 조건 검사
     if should_buy(df) and holding_amount <= 0:
         # KRW 잔고 조회 및 매수 금액 계산
@@ -68,7 +95,7 @@ def trading_logic(ticker):
             logging.info("매수 조건 미충족 또는 매수 주문 실패")
 
     # 매도 조건 검사
-    if should_sell(df, ticker, current_price, holding_amount, avg_buy_price):
+    if should_sell(df, current_price, holding_amount, avg_buy_price):
         # 해당 코인의 보유량 조회
         holding_amount, _ = get_balance(ticker=ticker)
 

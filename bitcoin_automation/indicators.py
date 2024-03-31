@@ -3,6 +3,8 @@ def calculate_moving_averages(df, short_window=10, long_window=20):
     df['ma_short'] = df['close'].rolling(window=short_window).mean()
     df['ma_long'] = df['close'].rolling(window=long_window).mean()
     df['ma_diff'] = df['ma_short'] - df['ma_long']
+    df['ma_diff_rate'] = (df['ma_short'] - df['ma_long']) / df['ma_long'] * 100
+
     return df
 
 # MACD 계산
